@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<title>photoGallery</title>
+<style>
+    body {
+        font-family: fantasy;
+        position: absolute;
+        left: 100px;
+    }
+    h1 {
+        text-shadow: 0 0 3px rgb(220, 164, 245);
+        text-align: center;
+    }
+    .column {
+    float: left;
+    width: 25%;
+    padding: 30px;
+    }   
+/* Clear floats after image containers */
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+    .navBar{
+        list-style-type: none;
+        text-align: center;
+        padding: 10px 10px;
+    } 
+    .navBar li {
+        display: inline;
+        padding: 20px;
+    }
+    .navBar li a:hover {
+        background: repeating-linear-gradient(to bottom right, rgb(238, 238, 188), rgb(243, 160, 171));
+        padding: 3px;
+        transform: scale(1.1, 1.1); 
+        border-radius: 15px;
+        color: white;
+    }
+</style>
+
+<html>
+    <body background="img/background.jpg">
+        <h1>Penny's Photo Gallery</h1>
+        <ul class="navBar">
+                <li><a href="homepage.html">Homepage</a></li>
+                <li>Photo Gallery</li>
+                <li><a href="contact.html">Contact Us</a></li>  
+        </ul>
+        <div class="row">
+            <div class="column">
+                <img src="img/PennyFirstEncounter.jpeg" alt="PennyFirstEncounter" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="img/PennyPlay.jpeg" alt="PennyPlay" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="img/PennyNap.jpeg" alt="PennyPlay" width="300" height="300">
+            </div>
+        </div> 
+        <div class="row">
+            <div class="column">
+                <img src="img/PennyWorldCup.jpeg" alt="PennyWorldCup" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="img/PennyBeingCreepy.jpeg" alt="PennyBeingCreepy" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="img/penny_selfie.jpeg" alt="PennySelfie" width="300" height="300">
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="img/PennyVacationHouse.jpeg" alt="PennyVacationHouse" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="img/PennyOnTree.jpeg" alt="PennyOnTree" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="img/PennyOnRoadtrip2.jpeg" alt="PennySelfie" width="300" height="300">
+        </div>      
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<title>photoGallery</title>
+<style>
+    .column {
+    float: left;
+    width: 25%;
+    padding: 30px;
+    }   
+
+/* Clear floats after image containers */
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+</style>
+
+<html>
+    <body background="img/background.jpg">
+        <h1 align="Center">Penny's Photo Gallery</h1>
+        <p align="Center"><a href ="homepage.html">Homepage</a> | <strong>Photo Gallery</strong> | <a href="contact.html">Contact Us</a></p>
+        <div class="row">
+            <div class="column">
+                <img src="img/PennyFirstEncounter.jpeg" alt="PennyFirstEncounter" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="img/PennyPlay.jpeg" alt="PennyPlay" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="img/PennyNap.jpeg" alt="PennyPlay" width="300" height="300">
+            </div>
+        </div> 
+        <div class="row">
+            <div class="column">
+                <img src="img/PennyWorldCup.jpeg" alt="PennyWorldCup" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="img/PennyBeingCreepy.jpeg" alt="PennyBeingCreepy" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="img/penny_selfie.jpeg" alt="PennySelfie" width="300" height="300">
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="img/PennyVacationHouse.jpeg" alt="PennyVacationHouse" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="img/PennyOnTree.jpeg" alt="PennyOnTree" width="300" height="300">
+            </div>
+            <div class="column">
+                <img src="img/PennyOnRoadtrip2.jpeg" alt="PennySelfie" width="300" height="300">
+        </div>      
+    </body>
+</html>

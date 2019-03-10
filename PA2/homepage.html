@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<title>homePage</title>
+<style>
+    body {
+        font-family: fantasy;
+    }
+    .column {
+        float: left;
+        width: 45%;
+        padding: 10px;
+    }
+    /* Clear floats after image containers */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    h1{
+        text-shadow: 0 0 3px rgb(220, 164, 245);
+        text-align: center;
+    }  
+    .navBar{
+        list-style-type: none;
+        text-align: center;
+        padding: 10px 10px;
+    } 
+    .navBar li {
+        display: inline;
+        padding: 20px;
+    }
+    .navBar li a:hover {
+        background: repeating-linear-gradient(to bottom right, rgb(238, 238, 188), rgb(243, 160, 171));
+        padding: 3px;
+        transform: scale(1.1, 1.1); 
+        border-radius: 15px;
+        color: white;
+    }
+</style>
+<html>
+    <body background="img/background.jpg">
+        <h1>Penny the Cat</h1>
+        <ul class="navBar">
+            <li>Homepage</li>
+            <li><a href="photo_gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>  
+        </ul>
+        <audio controls autoplay loop>
+            <source src="audio/with_you.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div class="row">
+            <div class="column">
+                <img src="img/penny1.jpeg" alt="PennyOnRoadTrip" width="300" height="300">
+            </div>
+            <div class="column">
+                <table border="1">
+                    <caption><strong>About Penny</strong></caption>
+                    <tr>
+                        <th>Breed</th>
+                        <td>American Shorthair</td>
+                    </tr>
+                    <tr>
+                        <th>Birthday</th>
+                        <td>March 1st 2018</td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td>Female</td>
+                    </tr>
+                    <tr>
+                        <th>Weight</th>
+                        <td>3kg</td>
+                    </tr>
+                    <tr>
+                        <th>Best Friend</th>
+                        <td>Roomba the Vaccum Cleaner</td>
+                    </tr>
+                    <tr>
+                        <th>Enemy</th>
+                        <td>Cat Grommer from Downstairs</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                Favorite Things:
+                <ul>
+                    <li>Eggs</li>
+                    <li>Chicken Breast</li>
+                    <li>Feathers</li>
+                    <li>Plants</li>
+                    <li>Sunshine</li>
+                    <li>Play with Bugs</li>
+                    <li>Rolling in Dirt</li>
+                </ul>
+            </div>
+            <div class="column">
+                Least Favorite Things:
+                <ul>
+                    <li>Dogs</li>
+                    <li>Vegetables</li>
+                    <li>Cuddle</li>
+                    <li>Loud Noises</li>
+                    <li>Taking Showers</li>
+                    <li>Wearing Birthday Hats</li>
+                </ul>
+            </div>
+        </div>
+
+        <p>What to learn more about American Shorthair?<br>
+            <ul>
+                <li><a href="http://www.vetstreet.com/cats/american-shorthair#1_ugw20zmq">Breed profile </a>made by VetStreet.<br><br></li>
+                <li><a href="http://www.softschools.com/facts/cats/american_shorthair_facts/2627/">Fun facts </a>that you don't know about American Shorthair.</li>
+            </ul>
+        </p>
+
+        <p><br>Want to make a fancy meal for your cat? Check out this cat sushi tutorial made by my favorite Youtuber <a href="https://www.youtube.com/channel/UCRxAgfYexGLlu1WHGIMUDqw">JunsKitcken:</a></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zGcYabz3hYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>&copy; 2019<p>
+    </body>
+    
+</html>

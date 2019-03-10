@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<style>
+    body {
+        font-family: fantasy;
+    }
+    h1 {
+        text-shadow: 0 0 3px rgb(220, 164, 245);
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+        font-size: 15pt;
+        font-weight: 900;
+        position: relative;
+        left: 200px;
+        width: 60%;
+        padding: 50px;
+        border: 8px dashed white;
+        margin: 15px;
+        border-radius: 15px;
+        box-shadow: 3px 3px 8px 5px gray;
+        animation-name: changeColors;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes changeColors {
+        0%   { background-image: url("img/b1.jpg");  }
+        50%  { background-image: url("img/b2.jpg");  }
+        100% { background-image: url("img/b1.jpg");  }
+    }
+    .nameLabel {
+        position: relative;
+        left: 10px;
+    }
+    .emailLabel {
+        position: relative;
+        left: 10px;
+    }
+    .dateLabel {
+        position: relative;
+        left: 10px;
+    }
+    .commentLabel {
+        position: relative;
+        left: 25px;
+    }
+    #name {
+        position: relative;
+        left: 30px;
+    }
+    #email {
+        position: relative;
+        left: 30px;
+    }
+    #birthday {
+        position: relative;
+        left: 20px;
+    }
+    #comment {
+        position: relative;
+        left: 38px;
+    }
+    .submitButton {
+        position: relative;
+        top: 30px;
+        left: 20px;
+        transition: width 0.3s, height 0.3s;
+    }
+    .submitButton:hover {
+        transform: scale(1.2, 1.2);
+        color: rgb(156, 9, 100);
+        border-radius: 15px;
+    }
+    .navBar{
+        list-style-type: none;
+        text-align: center;
+        padding: 10px 10px;
+    } 
+    .navBar li {
+        display: inline;
+        padding: 20px;
+    }
+    .navBar li a:hover {
+        background: repeating-linear-gradient(to bottom right, rgb(238, 238, 188), rgb(243, 160, 171));
+        padding: 3px;
+        transform: scale(1.1, 1.1); 
+        border-radius: 15px;
+        color: white;
+    }
+</style>
+
+<title>contactUs</title>
+<html>
+    <body background="img/background.jpg">
+        <h1>Contact Us</h1>
+        <ul class="navBar">
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="photo_gallery.html">Photo Gallery</a></li>
+                <li>Contact Us</li>  
+        </ul>
+        <br><br>
+        <h2>    
+            <form action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST">
+                <label class="nameLabel" for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Smith">
+                <br><br>
+                <label class="emailLabel" for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="smith@gmail.com">
+                <br><br>
+                <label class="dateLabel" for="birthday">Birthday</label>
+                <input type="birthday" name="birthday" id="birthday" min="1900-01-01" max="2019-01-01">
+                <br><br>
+                <label class="commentLabel" for="comment">Comment</label>
+                <textarea id="comment" name="comment" placeholder="I think..." rows="6" cols="25"></textarea>
+                <br><br>
+                <input class="submitButton" type="submit" value="Submit">
+            </form>
+        </h2>
+    </body>
+</html>
